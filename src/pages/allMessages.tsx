@@ -4,7 +4,7 @@ import { InferGetStaticPropsType } from 'next';
 import Link from 'next/link';
 import { TableMessages } from '../components/tableMessages';
 
-export default function allMessages({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function AllMessages({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   console.log(posts);
 
   console.log(` é um array? ${Array.isArray(posts)}`);
