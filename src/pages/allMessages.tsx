@@ -23,7 +23,7 @@ export default function allMessages({ posts }: InferGetStaticPropsType<typeof ge
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/find');
+  const res = await fetch('/api/find');
   const data = await res.json();
   const posts = data.messages;
   return {
