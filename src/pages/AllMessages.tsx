@@ -10,20 +10,16 @@ export default function AllMessages() {
 
   useEffect(() => {
     async function fetchData() {
-      setTimeout(() => {
-        fetch('/api/find', {
-          method: 'GET',
-          headers: {
-            'content-type': 'application/json',
-            Authorization: 'Bearer ' + vercelToken,
-          },
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            const messages = data.messages;
-            setPosts(messages);
-          });
-      }, 5000);
+      const res = await fetch('/api/find', {
+        method: 'GET',
+        headers: {
+          'content-type': 'application/json',
+          Authorization: 'Bearer ' + vercelToken,
+        },
+      });
+      const data = await res.json();
+      const messages = data.messages;
+      setPosts(messages);
     }
     fetchData();
   }, []);
