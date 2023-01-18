@@ -9,7 +9,7 @@ export default function AllMessages() {
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch('http://localhost:3000/api/find');
+      const res = await fetch('/api/find');
       const data = await res.json();
       const messages = data.messages;
       setPosts(messages);
