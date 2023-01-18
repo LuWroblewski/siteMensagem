@@ -12,7 +12,7 @@ const Menu = () => {
   const [message, setMessage] = useState('');
 
   const handleclick = () => {
-    fetch('../api/insert', {
+    fetch('./api/insert', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
