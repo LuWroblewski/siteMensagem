@@ -1,7 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { config } from '../../../next.config';
+
 import monk from 'monk';
 export const DB = () => {
-  return monk(process.env.MONGO_URI);
+  return monk(config.env.MONGO_URI);
 };
 export const db = DB();
 export const collection = db.get('messages');
