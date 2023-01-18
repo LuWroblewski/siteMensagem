@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import monk from 'monk';
-import monk from 'monk';
 export const DB = () => {
   return monk(process.env.MONGO_URI);
 };
