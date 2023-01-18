@@ -1,0 +1,53 @@
+.tablePeople {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  background-color: white;
+  display: block;
+  transition: 0.15s;
+  max-width: 100%;
+  width: 100%;
+  top: -80px;
+}
+.tablePeople.tablePeople td, .tablePeople.tablePeople th {
+  text-align: center;
+  padding: 8px;
+  max-width: 100%;
+  width: 1000px;
+  border-top: 50px;
+}
+.tablePeople.tablePeople td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 15px;
+  overflow: auto;
+  max-width: 100%;
+  width: 1000px;
+}
+.tablePeople.tablePeople th {
+  color: #ffffff;
+  background: rgba(20, 14, 85, 0.6784313725);
+  font-size: 15px;
+  max-width: 100%;
+  width: 1000px;
+}
+.tablePeople tr:hover {
+  background-color: #cccccc;
+}
+.tablePeople.tablePeople tr:nth-child(even) {
+  background: #F8F8F8;
+}
+.tablePeople.tablePeople tr:nth-child(even):hover {
+  background-color: #cccccc;
+}
+.tablePeople.tdPeople {
+  max-width: 100%;
+  width: 1000px;
+}
+
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,30 @@
+
+                 
+.buttonLogin{   
+      width: 100%;
+      background: #07b874;
+      border: 1px solid #07b874;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Arial;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 16px;
+      min-height: 40px;
+      outline: 0;
+      padding: 12px 14px;
+      text-align: center;
+      margin-top: 15px;
+
+    &:hover{
+      background-color: initial;
+      background-position: 0 0;
+      color: #07b874;
+    }
+}
+                
+                
