@@ -1,8 +1,4 @@
-```
-npm run dev
-# or
-yarn dev
-```
+
 # siteMensagem
 
 Você pode acessar esse projeto aqui -> https://site-mensagem.vercel.app/Home
