@@ -1,7 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import monk from 'monk';
-export const url = 'mongodb+srv://teste:teste123@cluster0.1ylmc4y.mongodb.net/site-messages';
-export const db = monk(url);
+import monk from 'monk';
+export const DB = () => {
+  return monk(process.env.MONGO_URI);
+};
+export const db = DB();
 export const collection = db.get('messages');
 import nodemailer from 'nodemailer';
 
