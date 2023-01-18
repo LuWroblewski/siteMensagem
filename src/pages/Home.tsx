@@ -1,4 +1,4 @@
-//import Link from 'next/link';
+import Link from 'next/link';
 import autosize from 'autosize';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -12,7 +12,7 @@ const Menu = () => {
   const [message, setMessage] = useState('');
 
   const handleclick = () => {
-    fetch('../api/insert', {
+    fetch('http://localhost:3000/api/insert', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -39,12 +39,14 @@ const Menu = () => {
         <h2 className="title">Mensagem 😎❤️</h2>
         <Post placeholder="Nome" value={name} onChange={(e) => setName(e)} text={''} maxLength={110} />
         <Post placeholder="Mensagem: " value={message} onChange={(e) => setMessage(e)} text={''} maxLength={110} />
-        <ButtonForm
-          onClick={() => {
-            handleclick();
-          }}
-          text={'Enviar'}
-        ></ButtonForm>
+        <Link href="AllMessages">
+          <ButtonForm
+            onClick={() => {
+              handleclick();
+            }}
+            text={'Enviar'}
+          ></ButtonForm>
+        </Link>
       </form>
       <small className="author">Feito com ❤️ por Lexy</small>
     </div>
