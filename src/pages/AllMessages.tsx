@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from '../img/Logotipo.png';
 import Link from 'next/link';
 import { TableMessages } from '../components/tableMessages';
+const vercelToken = 'z0G6mcDXRgdDWtpmT2NmlwcT';
 
 export default function AllMessages() {
   const [posts, setPosts] = useState([]);
@@ -11,6 +12,10 @@ export default function AllMessages() {
     async function fetchData() {
       const res = await fetch('/api/find', {
         method: 'GET',
+        headers: {
+          'content-type': 'application/json',
+          Authorization: 'Bearer ' + vercelToken,
+        },
       });
       const data = await res.json();
       const messages = data.messages;
