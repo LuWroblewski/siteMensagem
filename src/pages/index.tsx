@@ -39,7 +39,7 @@ const Menu = () => {
         <h2 className="title">Mensagem 😎❤️</h2>
         <Post placeholder="Nome" value={name} onChange={(e) => setName(e)} text={''} maxLength={110} />
         <Post placeholder="Mensagem: " value={message} onChange={(e) => setMessage(e)} text={''} maxLength={110} />
-        <Link href="allMessages">
+        <Link href="AllMessages">
           <ButtonForm
             onClick={() => {
               handleclick();
