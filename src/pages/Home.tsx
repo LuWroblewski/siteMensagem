@@ -12,7 +12,7 @@ const Menu = () => {
   const [message, setMessage] = useState('');
 
   const handleclick = () => {
-    fetch('http://localhost:3000/api/insert', {
+    fetch('./api/insert', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
