@@ -9,6 +9,12 @@ export default function AllMessages() {
 
   useEffect(() => {
     async function fetchData() {
+      const res = await fetch('/api/find', {
+        method: 'GET',
+        headers: {
+          'content-type': 'application/json',
+        },
+      });
       const res = await fetch('/api/find');
       const data = await res.json();
       const messages = data.messages;
