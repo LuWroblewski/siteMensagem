@@ -6,6 +6,7 @@ import { ButtonForm } from '../components/button';
 import { Post } from '../components/post';
 import Image from 'next/image';
 import logo from '../img/Logotipo.png';
+const vercelToken = 'z0G6mcDXRgdDWtpmT2NmlwcT';
 
 const Menu = () => {
   const [name, setName] = useState('');
@@ -16,6 +17,7 @@ const Menu = () => {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
+        Authorization: 'Bearer ' + vercelToken,
       },
       body: JSON.stringify({
         name: name,
