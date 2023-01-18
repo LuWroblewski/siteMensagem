@@ -8,12 +8,13 @@
   border: none;
   border-collapse: collapse;
   word-wrap: break-word;
-  background-color: white;
+  background-color: #4a6083;
   display: block;
   transition: 0.15s;
   max-width: 100%;
   width: 100%;
   top: -80px;
+  color: #ffffff;
 }
 .tablePeople.tablePeople td, .tablePeople.tablePeople th {
   text-align: center;
@@ -23,7 +24,7 @@
   border-top: 50px;
 }
 .tablePeople.tablePeople td {
-  border-right: 1px solid #f8f8f8;
+  border-right: 1px solid #1c2330;
   font-size: 15px;
   overflow: auto;
   max-width: 100%;
@@ -31,16 +32,16 @@
 }
 .tablePeople.tablePeople th {
   color: #ffffff;
-  background: rgba(20, 14, 85, 0.6784313725);
+  background: #1c2330;
   font-size: 15px;
   max-width: 100%;
   width: 1000px;
 }
 .tablePeople tr:hover {
-  background-color: #cccccc;
+  background-color: #32425B;
 }
 .tablePeople.tablePeople tr:nth-child(even) {
-  background: #F8F8F8;
+  background: #32425B;
 }
 .tablePeople.tablePeople tr:nth-child(even):hover {
   background-color: #cccccc;
