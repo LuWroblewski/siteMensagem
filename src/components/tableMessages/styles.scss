@@ -1,6 +1,6 @@
 .tablePeople{
     position: relative;
-    height:350px;
+    height:550px;
     overflow:auto;
     border-radius: 5px;
     font-size: 12px;
@@ -12,7 +12,7 @@
     display: block;
     transition: 0.15s;
     max-width: 100%;
-    width: 100%; 
+    width: 100%;
     top: -80px;
     color: #ffffff;
 &.tablePeople td, &.tablePeople th{
@@ -38,7 +38,8 @@
     width: 1000px;
 }
 tr:hover {  
-    background-color: #32425B 
+    background-color: #cccccc ;
+    color: black;
 }
 
 &.tablePeople tr:nth-child(even){
