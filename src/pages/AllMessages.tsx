@@ -29,7 +29,7 @@ export default function AllMessages() {
       <div className="logo">
         <Link href="/Home">
           <Image className="imageMenu" src={logo} alt="logo" width={100} height={100} />
-          <p className="menuReturn">retorne aqui </p>
+          <p className="menuReturn">Menu</p>
         </Link>
       </div>
 
